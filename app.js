@@ -347,14 +347,14 @@ shope.prototype.render = function () {
     trEl.appendChild(tdEl1);
     tdEl1.textContent = 'Totals';
   
-    let totalOfTotal = 0;
+    let totalhour = 0;
     for (let i = 0; i < hours.length; i++) {
       let total = 0;
       for (let j = 0; j < shopes.length; j++) {
         total += shopes[j].avgcookiesEachHour[i];
   
       }
-      totalOfTotal += total;
+      totalhour += total;
       let tdEl2 = document.createElement('td');
       trEl.appendChild(tdEl2);
       tdEl2.textContent = total;
@@ -362,7 +362,7 @@ shope.prototype.render = function () {
     }
     let tdEl3 = document.createElement('td');
     trEl.appendChild(tdEl3);
-    tdEl3.textContent =  totalOfTotal;
+    tdEl3.textContent =  totalhour;
   
   }
   
