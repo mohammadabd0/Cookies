@@ -393,7 +393,3 @@ Lima.getRandomInt(2,16)
 Lima.cookies();
 Lima.render();
 createTableFooter();
-// for (let i = 0; i < shopes.length; i++) {
-//     shopes[i].render();
-//     console.log(shopes);
-// }

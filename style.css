@@ -1,12 +1,63 @@
-* {
-  font-family: Arial, sans-serif;
+header {
+  /* background: #444; */
+  height: 100px;
+}
+.c1 {
+  overflow: hidden;
+  background-color: rgb(133, 213, 245);
+}
+/* Style the links inside the navigation bar */
+.c1 a {
+  float: left;
+  color: #180b0b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-table,
-th,
-td {
-  border: 1px solid rgb(15, 15, 15);
+/* Change the color of links on hover */
+.c1 a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(24, 22, 22);
 }
-#hi {
-  color: rgb(56, 28, 28);
+
+/* Add a color to the active/current link */
+.c1 a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+/* h1 {
+  margin-left: 80%;
+  margin-top: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(19, 8, 8);
+} */
+
+img {
+  height: 450px;
+  width: 960px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.third {
+  background-color: rgb(141, 187, 189);
+  height: 300px;
+}
+header nav h1 {
+  float: right;
+  padding-right: 995px;
+  color: rgb(255, 255, 255);
+}
+main div h3 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 25px;
+}
+div ul {
+  list-style: decimal;
+  font-size: 25px;
 }
