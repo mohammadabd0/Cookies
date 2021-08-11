@@ -358,6 +358,7 @@ shope.prototype.render = function () {
       let tdEl2 = document.createElement('td');
       trEl.appendChild(tdEl2);
       tdEl2.textContent = total;
+      
   
     }
     let tdEl3 = document.createElement('td');
@@ -365,13 +366,13 @@ shope.prototype.render = function () {
     tdEl3.textContent =  totalhour;
   
   }
-  
+
+
 
 let Seattle = new shope('Seattle ',23,65,6.3);
 Seattle.getRandomInt(23,65)
 Seattle.cookies();
 Seattle.render();
-console.log(shopes);
 
 let Tokyo = new shope('Tokyo',3,24,1.2);
 Tokyo.getRandomInt(20,38)
@@ -393,3 +394,22 @@ Lima.getRandomInt(2,16)
 Lima.cookies();
 Lima.render();
 createTableFooter();
+
+let salesInput = document.getElementById('salesInput');
+salesInput.addEventListener('submit',lo);
+function lo(event) {
+  event.preventDefault();
+  let name = event.target.name.value;
+  let min = event.target.min.value;
+  let max = event.target.max.value;
+  let avg = event.target.avg.value;
+  tableEl.deleteRow(-1)
+  let newl = new shope(name,min,max,avg);
+  
+  newl.getRandomInt(min,max)
+  newl.cookies();
+  newl.render();
+
+  createTableFooter();
+  document.getElementById('salesInput').reset();
+}

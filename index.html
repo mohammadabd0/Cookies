@@ -20,28 +20,140 @@
     </header>
 
     <main>
-      <section>
-        <img
-          src="https://raw.githubusercontent.com/LTUC/amman-irbid-201d35/main/class-08/lab-b/assets/cutter.jpeg
-          "
-          alt=""
-        />
-        <div class="third">
-          <h3>Store Hours</h3>
-          <ul>
-            <li>Monday: 6am - 8pm</li>
-            <li>Tuesday: 6am - 8pm</li>
-            <li>Wednesday: 6am - 8pm</li>
-            <li>Thursday: 6am - 8pm</li>
-            <li>Friday: 6am - 8pm</li>
-            <li>Saturday: 6am - 8pm</li>
-            <li>Sunday: 6am - 8pm</li>
-          </ul>
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img
+            src="https://raw.githubusercontent.com/LTUC/amman-irbid-201d35/main/class-08/lab-b/assets/cutter.jpeg"
+            style="width: 100%"
+          />
         </div>
-      </section>
 
-      <section></section>
+        <div class="mySlides fade">
+          <img
+            src="https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/chinook.jpg?raw=true"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img
+            src="https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/family.jpg?raw=true"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img
+            src="https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/fish.jpg?raw=true"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img
+            src="https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/frosted-cookie.jpg?raw=true"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img
+            src="https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/shirt.jpg?raw=true"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+     
     </main>
-    <footer></footer>
+   <!-- Site footer -->
+   <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>contact us</h6>
+          <p class="text-justify"> <ul>
+      <li>Main Address: St10,saettle us</li>
+      <li>Email:seattleUS@gmail.com</li>
+      <li>office company number: (+1 8174382397)</li>
+      
+    </ul></p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Store Hours</h6>
+         <h4>from: </h4> 
+          <ul>
+          <li>Monday: 6am - 8pm</li>
+          <li>Tuesday: 6am - 8pm</li>
+          <li>Wednesday: 6am - 8pm</li>
+          <li>Thursday: 6am - 8pm</li>
+          <li>Friday: 6am - 8pm</li>
+          <li>Saturday: 6am - 8pm</li>
+          <li>Sunday: 6am - 8pm</li>
+        </ul>
+       
+        </div>
+
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+       <a href="#">mohammad abdo :P</a>.
+          </p>
+        </div>
+
+       
+</footer>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>

@@ -2,12 +2,9 @@
   font-family: Arial, sans-serif;
 }
 
-/* table,
-th,
-td {
-  border: 1px solid rgb(15, 15, 15);
-  background-color: #f2f2f2;
-} */
+body {
+  background-color: rgb(208, 212, 208);
+}
 table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -15,6 +12,8 @@ table {
   font-family: sans-serif;
   min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table tr {
@@ -61,4 +60,35 @@ header nav h1 {
   float: right;
   padding-right: 995px;
   color: rgb(255, 255, 255);
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #046daa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #58d6d6;
+}
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
